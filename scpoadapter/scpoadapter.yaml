@@ -27,7 +27,8 @@ gs1:
       skuhistidentifier: GS1_JDA 2020.2.0
       dfutoskufcstidentifier: GS1_JDA 2020.2.0
   enable:
-    validation: "true"      
+    #validation: "true"
+    validation: "false"
   message:
     size: "100"
     plannedSupply:
