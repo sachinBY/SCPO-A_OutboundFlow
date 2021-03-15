@@ -22,14 +22,12 @@ gs1:
     typeversion: "3.2"
     release: 2018.1.0
     message: "GS1"
-    message: "BYDM"
-    scope:
+  scope:
       identifier: GS1_JDA 2020.2.0
       skuhistidentifier: GS1_JDA 2020.2.0
       dfutoskufcstidentifier: GS1_JDA 2020.2.0
   enable:
-    #validation: "true"
-    validation: "false"
+    validation: "true"
   message:
     size: "100"
     plannedSupply:
