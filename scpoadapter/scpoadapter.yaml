@@ -22,12 +22,12 @@ gs1:
     typeversion: "3.2"
     release: 2018.1.0
     message: "GS1"
-    scope:
+  scope:
       identifier: GS1_JDA 2020.2.0
       skuhistidentifier: GS1_JDA 2020.2.0
       dfutoskufcstidentifier: GS1_JDA 2020.2.0
   enable:
-    validation: "true"      
+    validation: "true"
   message:
     size: "100"
     plannedSupply:
@@ -181,7 +181,7 @@ cal:
 
 bydm:
   enable:
-    validation: "true"
+    validation: "false"
   out:
     sku:
       message: "itemLocation"      
@@ -243,7 +243,7 @@ bydm:
       out:
         message: "BYDM"
     item:
-      messageType: "item"
+      messageType: "item"      
     plannedsupply:
       messageType: "plannedSupply"
       out:
