@@ -1,0 +1,31 @@
+canmodel:
+  #use GS1Configuration_CANMODEL_SERVICE to use canmodel as a service. 
+  #use GS1_Config_LOCAL_FILE_CONFIG to use local file canmodel 
+  type: "GS1_Config_LOCAL_FILE_CONFIG"
+  #use GS1_JDA 2020.1.0.1 for sainsbury
+  version: "GS1_JDA 2020.3.0-0"
+  bydm:
+    #use BYDM_CONFIG_CANMODEL_SERVICE to use canmodel as a service. 
+    #use BYDM_CONFIG_LOCAL_FILE_CONFIG to use local file canmodel
+    type: "BYDM_CONFIG_LOCAL_FILE_CONFIG" 
+    version: "BYDM 2020.3.0-0" 
+  service:
+    config: "HTTP_Canmodel_Request_configuration"
+    #config: "HTTPS_Canmodel_Request_configuration"
+    connection:
+      idle:
+        timeout: "30000"
+    max:
+      connections: "-1"
+    http:
+      #host: "azenpdconap003.dev.corp.local"
+      host: "localhost"
+      port: "9861"
+    https:
+      host: "localhost"
+      port: "9860"
+      tls:
+        keystore:
+          path: "keystore.jks"
+        truststore:
+          path: "truststore.jks"
