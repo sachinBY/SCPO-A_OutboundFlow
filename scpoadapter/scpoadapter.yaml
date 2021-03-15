@@ -21,7 +21,8 @@ gs1:
       receiver: 
     typeversion: "3.2"
     release: 2018.1.0
-    message: "GS1"
+    #message: "GS1"
+    message: "BYDM"
     scope:
       identifier: GS1_JDA 2020.2.0
       skuhistidentifier: GS1_JDA 2020.2.0
